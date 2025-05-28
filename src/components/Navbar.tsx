@@ -4,7 +4,7 @@ import { MdCall } from "react-icons/md";
 
 export default function Navbar() {
     return (
-        <nav className="flex justify-between items-center p-4 border-b-1 border-slate-300">
+        <nav className="flex justify-between items-center p-4 border-b-1 border-slate-300 top-0 sticky bg-white">
             <Image 
                 src={Logo}
                 alt="Logo de Mecánica Facundo Callejas"

@@ -4,7 +4,8 @@ import HeroImage from "../../public/bikeservice3.jpg";
 export default function Hero() {
     return (
         <section
-            className="p-8 flex gap-2"
+            className="p-8 flex gap-2 scroll-mt-26"
+            id="home"
         >
             <div className="flex flex-col gap-4 items-start justify-center">
                 <h1 className="text-4xl font-bold">Mecánica Facundo Callejas</h1>
