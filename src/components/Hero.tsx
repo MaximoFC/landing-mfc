@@ -4,14 +4,13 @@ import HeroImage from "../../public/bikeservice3.jpg";
 export default function Hero() {
     return (
         <section
-            style={{ height: "calc(100dvh - 103px" }}
-            className="p-8 flex gap-2 scroll-mt-26 items-center"
+            className="p-8 flex flex-col gap-1 scroll-mt-26 items-center md:flex-row md:h-[calc(100dvh-90px)]"
             id="home"
         >
             <div className="flex flex-col gap-4 items-start justify-center w-full">
-                <h1 className="text-4xl font-bold">Mecánica Facundo Callejas</h1>
+                <h1 className="text-center text-4xl font-bold">Mecánica Facundo Callejas</h1>
                 <p className="text-2xl text-gray-700">Servicio profesional de <span className="text-red-500">bicicletas</span>.</p>
-                <div className="flex gap-10 self-center py-8">
+                <div className="flex flex-col gap-4 self-center py-8 md:flex-row md:gap-20">
                     <div className="flex flex-col items-center">
                         <p className="text-4xl font-semibold">20+</p>
                         <h2 className="text-lg text-gray-700">Años de experiencia</h2>
@@ -25,7 +24,7 @@ export default function Hero() {
                         <h2 className="text-lg text-gray-700">Servicio express</h2>
                     </div>
                 </div>
-                <div className="flex gap-4 items-center">
+                <div className="flex gap-4 items-center md:self-center">
                     <a 
                         href="https://wa.me/5493815475600/?text=Hola,%20quiero%20agendar%20un%20turno"
                         className="bg-red-500 p-3 text-white rounded-xl font-semibold hover:bg-red-600"
@@ -40,7 +39,7 @@ export default function Hero() {
                     </a>
                 </div>
             </div>
-            <div className="w-150 h-100 flex items-center">
+            <div className="w-70 h-70 md:w-150 md:h-100 flex items-center">
                 <Image 
                     src={HeroImage}
                     alt="Imagen de Facundo Callejas arreglando una bicicleta"
