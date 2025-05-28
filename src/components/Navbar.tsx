@@ -19,7 +19,7 @@ export default function Navbar() {
             <div className="hidden md:flex gap-6">
                 <a href="#home" className="hover:text-red-600">Inicio</a>
                 <a href="#services" className="hover:text-red-600">Servicios</a>
-                <a href="#aboutus" className="hover:text-red-600">Nosotros</a>
+                <a href="#about" className="hover:text-red-600">Nosotros</a>
                 <a href="#contact" className="hover:text-red-600">Contacto</a>
             </div>
             <div className="items-center hidden md:flex gap-4">
