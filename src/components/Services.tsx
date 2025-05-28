@@ -44,7 +44,7 @@ export default function Services() {
             id="services"
             className="p-8 gap-6 flex flex-col items-center scroll-mt-26"
         >
-            <h2 className="p-2 border-1 border-red-500 rounded-xl text-red-500 text-lg">Nuestros servicios</h2>
+            <h2 className="p-2 border-2 border-red-500 rounded-xl text-red-500 text-lg border-dashed">Nuestros servicios</h2>
             <h3 className="text-4xl font-semibold">Servicios profesionales para tu bicicleta</h3>
             <p
                 className="text-xl text-gray-700 text-center"

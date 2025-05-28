@@ -4,13 +4,27 @@ import HeroImage from "../../public/bikeservice3.jpg";
 export default function Hero() {
     return (
         <section
-            className="p-8 flex gap-2 scroll-mt-26"
+            style={{ height: "calc(100dvh - 103px" }}
+            className="p-8 flex gap-2 scroll-mt-26 items-center"
             id="home"
         >
-            <div className="flex flex-col gap-4 items-start justify-center">
+            <div className="flex flex-col gap-4 items-start justify-center w-full">
                 <h1 className="text-4xl font-bold">Mecánica Facundo Callejas</h1>
-                <p className="text-xl text-gray-700">Servicio profesional de <span className="text-red-500">bicicletas</span>.</p>
-                <p className="text-xl text-gray-700">Mantenimiento, reparación y detailing especializado para tu bicicleta. Más de 20 años de experiencia.</p>
+                <p className="text-2xl text-gray-700">Servicio profesional de <span className="text-red-500">bicicletas</span>.</p>
+                <div className="flex gap-10 self-center py-8">
+                    <div className="flex flex-col items-center">
+                        <p className="text-4xl font-semibold">20+</p>
+                        <h2 className="text-lg text-gray-700">Años de experiencia</h2>
+                    </div>
+                    <div className="flex flex-col items-center">
+                        <p className="text-4xl font-semibold">500+</p>
+                        <h2 className="text-lg text-gray-700">Clientes satisfechos</h2>
+                    </div>
+                    <div className="flex flex-col items-center">
+                        <p className="text-4xl font-semibold">24h</p>
+                        <h2 className="text-lg text-gray-700">Servicio express</h2>
+                    </div>
+                </div>
                 <div className="flex gap-4 items-center">
                     <a 
                         href="https://wa.me/5493815475600/?text=Hola,%20quiero%20agendar%20un%20turno"
@@ -26,13 +40,14 @@ export default function Hero() {
                     </a>
                 </div>
             </div>
-            <Image 
-                src={HeroImage}
-                alt="Imagen de Facundo Callejas arreglando una bicicleta"
-                width={400}
-                height={350}
-                className="rounded-xl shadow-xl shadow-slate-400"
-            />
+            <div className="w-150 h-100 flex items-center">
+                <Image 
+                    src={HeroImage}
+                    alt="Imagen de Facundo Callejas arreglando una bicicleta"
+                    sizes="fill"
+                    className="rounded-xl shadow-xl shadow-slate-400"
+                />
+            </div>
         </section>
     )
 }
