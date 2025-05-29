@@ -8,7 +8,7 @@ export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <nav className="flex justify-between items-center p-4 border-b-1 border-slate-300 top-0 sticky bg-white relative">
+        <nav className="flex justify-between items-center p-4 border-b-1 border-slate-300 top-0 sticky bg-white relative z-1">
             <Image 
                 src={Logo}
                 alt="Logo de Mecánica Facundo Callejas"

@@ -32,7 +32,7 @@ export default function Hero() {
                         Pedí tu turno ahora
                     </a>
                     <a 
-                        href=""
+                        href="#services"
                         className="border-1 border-slate-300 text-black p-3 rounded-xl font-semibold hover:bg-slate-300"
                     >
                         Ver servicios

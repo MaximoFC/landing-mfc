@@ -3,7 +3,6 @@ import { MdOutlineMailOutline } from "react-icons/md";
 import { TbClockHour7 } from "react-icons/tb";
 import { FaRegMessage } from "react-icons/fa6";
 
-
 export default function Contact() {
     return (
         <div className="flex flex-col p-4 gap-6 scroll-mt-26" id="contact">
@@ -93,7 +92,7 @@ export default function Contact() {
                         </button>
                     </form>
                 </div>
-                <div className="border-1 border-slate-300 rounded-xl p-4 shadow-xl shadow-slate-300" >
+                <div className="border-1 border-slate-300 rounded-xl p-4 shadow-md shadow-slate-300" >
                     <div className="flex gap-2 items-center">
                         <IoLocationOutline className="w-8 h-8 text-red-500" />
                         <p className="text-xl font-semibold">Nuestra ubicación</p>
