@@ -50,7 +50,7 @@ export default function About() {
             </div>
             <div className="flex flex-col gap-4 py-8 items-center md:flex-row">
                 <div className="flex flex-col gap-6">
-                    <h2 className="text-4xl font-semibold text-center">Pasión por el ciclismo, compromiso con la calidad</h2>
+                    <h2 className="text-4xl font-semibold text-center md:text-left">Pasión por el ciclismo, compromiso con la calidad</h2>
                     <p className="text-lg text-gray-700">
                         En MFC entendemos que tu bicicleta es más que un medio de transporte: es tu compañera de aventuras, 
                         tu herramienta de ejercicio y tu pasión.
@@ -62,7 +62,7 @@ export default function About() {
                     <p className="text-lg text-gray-700">
                         Utilizamos repuestos originales para garantizar que tu bicicleta funcione al máximo de su potencial.
                     </p>
-                    <div className="flex flex-col gap-4">
+                    <div className="flex flex-col gap-4 md:flex-row">
                         <div className="flex gap-2">
                             <GoDot className="text-red-500 w-8 h-8" />
                             Mecánicos experimentados
@@ -81,7 +81,7 @@ export default function About() {
                         </div>
                     </div>
                 </div>
-                <div className="w-70 h-auto md:h-150">
+                <div className="w-70 h-auto md:w-150">
                     <Image 
                         src={ImageAbout}
                         alt="Imagen de Facundo Callejas en bicicleta"
