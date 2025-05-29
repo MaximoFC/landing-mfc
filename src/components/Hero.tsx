@@ -9,7 +9,7 @@ export default function Hero() {
         >
             <div className="flex flex-col gap-4 items-start justify-center w-full">
                 <h1 className="text-center text-4xl font-bold">Mecánica Facundo Callejas</h1>
-                <p className="text-2xl text-gray-700">Servicio profesional de <span className="text-red-500">bicicletas</span>.</p>
+                <p className="text-2xl text-gray-700 text-center">Servicio profesional de <span className="text-red-500">bicicletas</span>.</p>
                 <div className="flex flex-col gap-4 self-center py-8 md:flex-row md:gap-20">
                     <div className="flex flex-col items-center">
                         <p className="text-4xl font-semibold">20+</p>
