@@ -39,10 +39,10 @@ export default function Navbar() {
                 <GiHamburgerMenu className="h-8 w-8" />
             </button>
             {isMenuOpen && (
-                <div className="absolute top-full left-0 w-full bg-white flex flex-col gap-4 p-6 md:hidden border-b-1 border-slate-300">
+                <div className="absolute top-full left-0 w-full bg-white flex flex-col gap-4 p-6 md:hidden border-b-1 border-slate-300 shadow-xl shadow-slate-400">
                     <a href="#home" onClick={() => setIsMenuOpen(false)} className="text-red-500">Inicio</a>
                     <a href="#services" onClick={() => setIsMenuOpen(false)} className="text-red-500">Servicios</a>
-                    <a href="#aboutus" onClick={() => setIsMenuOpen(false)} className="text-red-500">Nosotros</a>
+                    <a href="#about" onClick={() => setIsMenuOpen(false)} className="text-red-500">Nosotros</a>
                     <a href="#contact" onClick={() => setIsMenuOpen(false)} className="text-red-500">Contacto</a>
                     <div className="flex gap-2 items-center justify-center">
                         <MdCall className="text-2xl" />

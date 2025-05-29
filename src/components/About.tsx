@@ -9,12 +9,12 @@ export default function About() {
     return (
         <section
             id="about"
-            className="p-8 flex flex-col items-center gap-6"
+            className="p-8 flex flex-col items-center gap-6 scroll-mt-26"
         >
             <h2 className="p-2 border-2 border-red-500 rounded-xl text-red-500 text-lg border-dashed">¿Por qué elegirnos?</h2>
             <p className="text-4xl font-semibold text-center md:text-left">Experiencia y Confianza</p>
             <p className="text-xl text-gray-700 text-center">Somos un taller especializado con años de experiencia cuidando bicicletas de todo tipo. Tu satisfacción es nuestra prioridad</p>
-            <div className="flex gap-10">
+            <div className="flex flex-col gap-4 md:flex-row md:gap-10">
                 <div className="flex flex-col items-center gap-3 border-1 border-slate-300 rounded-xl p-4 shadow-xl shadow-slate-300">
                     <div className="bg-red-100 rounded-full p-4">
                         <LiaMedalSolid className="w-15 h-15 text-red-500" />
@@ -48,21 +48,21 @@ export default function About() {
                     <p className="text-lg text-gray-700 text-center">En todas nuestras reparaciones</p>
                 </div>
             </div>
-            <div className="flex gap-4 py-8 items-center">
+            <div className="flex flex-col gap-4 py-8 items-center md:flex-row">
                 <div className="flex flex-col gap-6">
-                    <h2 className="text-4xl font-semibold">Pasión por el ciclismo, compromiso con la calidad</h2>
+                    <h2 className="text-4xl font-semibold text-center">Pasión por el ciclismo, compromiso con la calidad</h2>
                     <p className="text-lg text-gray-700">
                         En MFC entendemos que tu bicicleta es más que un medio de transporte: es tu compañera de aventuras, 
                         tu herramienta de ejercicio y tu pasión.
                     </p>
-                    <p>
+                    <p className="text-lg text-gray-700">
                         Nuestro equipo cuenta con 24 años de experiencia trabajando con todo tipo de bicicletas, desde urbanas hasta de
                         alta competencia.
                     </p>
-                    <p>
+                    <p className="text-lg text-gray-700">
                         Utilizamos repuestos originales para garantizar que tu bicicleta funcione al máximo de su potencial.
                     </p>
-                    <div className="flex gap-4 justify-center">
+                    <div className="flex flex-col gap-4">
                         <div className="flex gap-2">
                             <GoDot className="text-red-500 w-8 h-8" />
                             Mecánicos experimentados
@@ -81,7 +81,7 @@ export default function About() {
                         </div>
                     </div>
                 </div>
-                <div className="w-150 h-70">
+                <div className="w-70 h-auto md:h-150">
                     <Image 
                         src={ImageAbout}
                         alt="Imagen de Facundo Callejas en bicicleta"
@@ -93,8 +93,8 @@ export default function About() {
             <div className="flex flex-col gap-6 items-center">
                 <h2 className="p-2 border-2 border-red-500 rounded-xl text-red-500 text-lg border-dashed">Testimonios</h2>
                 <p className="text-4xl font-semibold text-center md:text-left">Lo que dicen nuestros clientes</p>
-                <div className="flex gap-4">
-                    <div className="border-1 border-slate-300 rounded-xl p-8 w-100 flex flex-col gap-8 shadow-xl shadow-slate-400">
+                <div className="flex gap-4 flex-col md:flex-row">
+                    <div className="border-1 border-slate-300 rounded-xl p-8 flex flex-col gap-8 shadow-xl shadow-slate-400">
                         <LuQuote className="text-red-500 w-10 h-10" />
                         <p className="italic text-gray-700">&quot;Siempre traigo mi bici aquí. Son rápidos, confiables y sus precios son muy justos. Totalmente recomendado.&quot;</p>
                         <div className="flex justify-start items-center gap-4 text-gray-700">
@@ -104,7 +104,7 @@ export default function About() {
                             Ana García <br />  Ciclista de montaña
                         </div>
                     </div>
-                    <div className="border-1 border-slate-300 rounded-xl p-8 w-100 flex flex-col gap-8 shadow-xl shadow-slate-400">
+                    <div className="border-1 border-slate-300 rounded-xl p-8 flex flex-col gap-8 shadow-xl shadow-slate-400">
                         <LuQuote className="text-red-500 w-10 h-10" />
                         <p className="italic text-gray-700">&quot;Prepararon mi bicicleta para una competencia importante. El detalle y la precisión fueron excepcionales.&quot;</p>
                         <div className="flex justify-start items-center gap-4 text-gray-700">
@@ -114,7 +114,7 @@ export default function About() {
                             Juan Pérez <br />  Ciclista de montaña
                         </div>
                     </div>
-                    <div className="border-1 border-slate-300 rounded-xl p-8 w-100 flex flex-col gap-8 shadow-xl shadow-slate-400">
+                    <div className="border-1 border-slate-300 rounded-xl p-8 flex flex-col gap-8 shadow-xl shadow-slate-400">
                         <LuQuote className="text-red-500 w-10 h-10" />
                         <p className="italic text-gray-700">&quot;Excelente servicio, mi bicicleta quedó como nueva. El equipo es muy profesional y conoce perfectamente su trabajo.&quot;</p>
                         <div className="flex justify-start items-center gap-4 text-gray-700">
